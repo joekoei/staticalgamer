@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import me.joekoei.events.*;
+import me.joekoei.commands.*;
 
 public class main extends JavaPlugin {
 
@@ -23,6 +24,6 @@ public class main extends JavaPlugin {
 	}
 	
 	public void commands() {
-		
+		getCommand("crew").setExecutor(new staffCMD());
 	}
 }
