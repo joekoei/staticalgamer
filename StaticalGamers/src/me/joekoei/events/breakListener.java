@@ -9,8 +9,9 @@ public class breakListener implements Listener{
 	public void OnBreak(BlockBreakEvent e) {
 		Player p = e.getPlayer();
 		
-		if(!p.isOp());
+		if(!p.isOp()) {
 			e.setCancelled(true);
-	}
-	
+		} else {
+			e.setCancelled(false);
+	}}	
 }
