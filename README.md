@@ -1,2 +1,3 @@
-# staticalgamer
-StaticalGamer core
+# StaticalGamer
+StaticalGamer Core
+Java / Bukkit API
