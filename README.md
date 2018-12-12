@@ -4,5 +4,5 @@ Java / Bukkit API
 -------
 Made by Joekoei
 -------
-School Shooting
+Full of Shit
 -------
