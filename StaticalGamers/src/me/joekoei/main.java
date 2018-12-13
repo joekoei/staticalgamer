@@ -25,5 +25,6 @@ public class main extends JavaPlugin {
 	
 	public void commands() {
 		getCommand("crew").setExecutor(new staffCMD());
+		getCommand("kick").setExecutor(new kickCMD());
 	}
 }
