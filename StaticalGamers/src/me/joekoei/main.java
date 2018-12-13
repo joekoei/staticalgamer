@@ -11,6 +11,7 @@ public class main extends JavaPlugin {
 	public void onEnable() {
 		events();
 		commands();
+		triggers();
 		System.out.println("Loaded StaticalGamer Core");
 	}
 	
@@ -21,6 +22,10 @@ public class main extends JavaPlugin {
 	public void events() {
 		Bukkit.getServer().getPluginManager().registerEvents(new joinListener(), this);
 
+	}
+	
+	public void triggers() {
+		
 	}
 	
 	public void commands() {
