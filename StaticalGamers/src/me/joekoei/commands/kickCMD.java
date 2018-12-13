@@ -1,5 +1,6 @@
 package me.joekoei.commands;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -12,7 +13,15 @@ public class kickCMD implements CommandExecutor {
 			if(!sender.isOp()) {
 				sender.sendMessage("Je bent geen staff vies kind!");
 			} else {
-				sender.sendMessage("Nog niet af!");
+				if(args.length < 1) {
+					sender.sendMessage("Je hebt geen speler opgegeven..");
+				}
+				
+				if(args.length == 1) {
+					sender.sendMessage("Je hebt" + args[0] + "gekickt");
+					Bukkit.dispatchCommand(sender, "kick " + args[0]);
+				}
+				
 			}
 		}
 		return false;
