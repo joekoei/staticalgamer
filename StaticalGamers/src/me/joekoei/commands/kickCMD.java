@@ -9,6 +9,7 @@ public class kickCMD implements CommandExecutor {
 		if(cmd.getName().equalsIgnoreCase("kick")); {
 			if(!sender.isOp()) {
 				sender.sendMessage("Je bent geen staff vies kind!");
+				
 			} else {
 				if(args.length < 1) {
 					sender.sendMessage("Je hebt geen speler opgegeven..");
