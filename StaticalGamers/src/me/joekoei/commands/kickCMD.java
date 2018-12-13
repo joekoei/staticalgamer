@@ -1,10 +1,7 @@
 package me.joekoei.commands;
 
-import org.bukkit.Bukkit;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
-
+import org.bukkit.*;
+import org.bukkit.command.*;
 public class kickCMD implements CommandExecutor {
 
 	@Override
