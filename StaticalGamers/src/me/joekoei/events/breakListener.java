@@ -13,5 +13,15 @@ public class breakListener implements Listener{
 			e.setCancelled(true);
 		} else {
 			e.setCancelled(false);
-	}}	
+	}}
+	
+	public onPlace(BlockPlaceEvent event) {
+		Player p = event.getPlayer();
+		
+		if(!p.isOp()) {
+			event.setCancelled(true);
+		} else {
+			event.setCancelled(false);
+		}
+	}
 }
