@@ -3,6 +3,7 @@ package me.joekoei.events;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.block.BlockPlaceEvent;
 
 public class breakListener implements Listener{
 
@@ -15,7 +16,7 @@ public class breakListener implements Listener{
 			e.setCancelled(false);
 	}}
 	
-	public onPlace(BlockPlaceEvent event) {
+	public void onPlace(BlockPlaceEvent event) {
 		Player p = event.getPlayer();
 		
 		if(!p.isOp()) {
