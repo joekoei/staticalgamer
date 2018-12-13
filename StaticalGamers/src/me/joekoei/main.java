@@ -1,7 +1,8 @@
 package me.joekoei;
 
 import org.bukkit.Bukkit;
-import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.plugin.java.*;
 
 import me.joekoei.events.*;
 import me.joekoei.commands.*;
@@ -17,7 +18,7 @@ public class main extends JavaPlugin {
 	}
 	
 	public void onDisable() {
-		
+		System.out.println("Domme poe");
 	}
 	
 	public void events() {
@@ -26,7 +27,6 @@ public class main extends JavaPlugin {
 	}
 	
 	public void commands() {
-		getCommand("crew").setExecutor(new staffCMD());
-		getCommand("kick").setExecutor(new kickCMD());
+        this.getCommand("kick").setExecutor((CommandExecutor)new kickCMD());
 	}
 }
