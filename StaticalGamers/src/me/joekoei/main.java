@@ -23,10 +23,10 @@ public class main extends JavaPlugin {
 	
 	public void events() {
 		Bukkit.getServer().getPluginManager().registerEvents(new joinListener(), this);
+		Bukkit.getServer().getPluginManager().registerEvents(new breakListener(), this);
 
 	}
 	
 	public void commands() {
-        this.getCommand("kick").setExecutor((CommandExecutor)new kickCMD());
 	}
 }
