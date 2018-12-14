@@ -1,11 +1,9 @@
 package me.joekoei;
 
 import org.bukkit.Bukkit;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.*;
 
 import me.joekoei.events.*;
-import me.joekoei.commands.*;
 
 public class main extends JavaPlugin {
 

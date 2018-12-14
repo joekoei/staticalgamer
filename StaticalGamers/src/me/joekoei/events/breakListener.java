@@ -1,9 +1,10 @@
 package me.joekoei.events;
 
-import org.bukkit.entity.Player;
-import org.bukkit.event.Listener;
-import org.bukkit.event.block.BlockBreakEvent;
-import org.bukkit.event.block.BlockPlaceEvent;
+import org.bukkit.*;
+import org.bukkit.block.*;
+import org.bukkit.entity.*;
+import org.bukkit.event.*;
+import org.bukkit.event.block.*;
 
 public class breakListener implements Listener{
 
@@ -23,6 +24,18 @@ public class breakListener implements Listener{
 			event.setCancelled(true);
 		} else {
 			event.setCancelled(false);
+		}
+	}
+	
+	public void onBreak(BlockBreakEvent event) {
+		Block b = event.getBlock();
+		World w = event.getBlock().getWorld();
+		Player p = event.getPlayer();
+		
+		if(!p.isOp()) {
+			
+		} else {
+			Bukkit.broadcastMessage("Block: " + b + " World: " + w + "Player:" + p);
 		}
 	}
 }
